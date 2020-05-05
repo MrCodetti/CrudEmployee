@@ -23,7 +23,7 @@ namespace CrudEmployee
 
         private void frmEmployee_Load(object sender, EventArgs e)
         {
-            //dgvEmployee.AutoGenerateColumns = false;
+            dgvEmployee.AutoGenerateColumns = false;
             dgvEmployee.DataSource = FetchEmpDetails();
         }
 
