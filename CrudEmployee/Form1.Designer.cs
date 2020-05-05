@@ -42,6 +42,11 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.colEmpId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDepartment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ssInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +70,12 @@
             // dgvEmployee
             // 
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colEmpId,
+            this.colName,
+            this.colCity,
+            this.colDepartment,
+            this.colGender});
             this.dgvEmployee.Location = new System.Drawing.Point(12, 234);
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.RowHeadersVisible = false;
@@ -181,6 +192,31 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // colEmpId
+            // 
+            this.colEmpId.HeaderText = "EmpId";
+            this.colEmpId.Name = "colEmpId";
+            // 
+            // colName
+            // 
+            this.colName.HeaderText = "Name";
+            this.colName.Name = "colName";
+            // 
+            // colCity
+            // 
+            this.colCity.HeaderText = "City";
+            this.colCity.Name = "colCity";
+            // 
+            // colDepartment
+            // 
+            this.colDepartment.HeaderText = "Department";
+            this.colDepartment.Name = "colDepartment";
+            // 
+            // colGender
+            // 
+            this.colGender.HeaderText = "Gender";
+            this.colGender.Name = "colGender";
+            // 
             // frmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +264,11 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEmpId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDepartment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGender;
     }
 }
 
