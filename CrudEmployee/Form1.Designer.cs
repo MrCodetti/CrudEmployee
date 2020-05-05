@@ -69,6 +69,8 @@
             // 
             // dgvEmployee
             // 
+            this.dgvEmployee.AllowUserToAddRows = false;
+            this.dgvEmployee.AllowUserToDeleteRows = false;
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colEmpId,
@@ -78,6 +80,7 @@
             this.colGender});
             this.dgvEmployee.Location = new System.Drawing.Point(12, 234);
             this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.ReadOnly = true;
             this.dgvEmployee.RowHeadersVisible = false;
             this.dgvEmployee.Size = new System.Drawing.Size(489, 262);
             this.dgvEmployee.TabIndex = 1;
@@ -194,28 +197,39 @@
             // 
             // colEmpId
             // 
+            this.colEmpId.DataPropertyName = "EmpId";
+            this.colEmpId.FillWeight = 20F;
             this.colEmpId.HeaderText = "EmpId";
             this.colEmpId.Name = "colEmpId";
+            this.colEmpId.ReadOnly = true;
             // 
             // colName
             // 
+            this.colName.DataPropertyName = "Name";
             this.colName.HeaderText = "Name";
             this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
             // 
             // colCity
             // 
+            this.colCity.DataPropertyName = "City";
             this.colCity.HeaderText = "City";
             this.colCity.Name = "colCity";
+            this.colCity.ReadOnly = true;
             // 
             // colDepartment
             // 
+            this.colDepartment.DataPropertyName = "Department";
             this.colDepartment.HeaderText = "Department";
             this.colDepartment.Name = "colDepartment";
+            this.colDepartment.ReadOnly = true;
             // 
             // colGender
             // 
+            this.colGender.DataPropertyName = "Gender";
             this.colGender.HeaderText = "Gender";
             this.colGender.Name = "colGender";
+            this.colGender.ReadOnly = true;
             // 
             // frmEmployee
             // 
